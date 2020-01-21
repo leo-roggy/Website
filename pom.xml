@@ -94,11 +94,10 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-spring-boot-starter</artifactId>
-            <exclusions>
-                <!-- Excluding so that webjars are not included. -->
+            <!-- <exclusions>
                 <exclusion><groupId>com.vaadin</groupId>
                     <artifactId>vaadin-core</artifactId></exclusion>
-            </exclusions>
+            </exclusions> -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -124,6 +123,7 @@
             <artifactId>jetty-maven-plugin</artifactId>
             <version>9.4.0.M0</version>
         </dependency>
+		
     </dependencies>
 
     <build>
