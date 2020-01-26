@@ -1,11 +1,12 @@
 package com.leo.views;
 
+import com.leo.Routing;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 
-@Route(value = "contact", layout = MainAppLayout.class)
+@Route(value = Routing.CORALINE_CONTACT, layout = MainAppLayout.class)
 public class ContactView extends ViewWrapper {
 	private static final long serialVersionUID = -303585372226324424L;
 

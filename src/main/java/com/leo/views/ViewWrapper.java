@@ -1,12 +1,14 @@
 package com.leo.views;
 
 import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
+@CssImport("./styles/main.css")
 public abstract class ViewWrapper extends VerticalLayout {
 	private static final long serialVersionUID = -6534435350726022958L;
 
@@ -19,7 +21,6 @@ public abstract class ViewWrapper extends VerticalLayout {
 		this.setSizeFull();
 
 		super.add(this.workspace, this.footer);
-
 	}
 
 	@Override
@@ -29,7 +30,7 @@ public abstract class ViewWrapper extends VerticalLayout {
 
 	private void initWorkspace() {
 		this.workspace = new Div();
-		this.workspace.setSizeFull();
+		this.workspace.setClassName("workspace");
 	}
 
 	private void initFooter() {
@@ -41,5 +42,6 @@ public abstract class ViewWrapper extends VerticalLayout {
 		this.footer = new HorizontalLayout(facebook, twitter);
 		footer.setJustifyContentMode(JustifyContentMode.CENTER);
 		footer.setWidth("100%");
+		footer.setClassName("footer");
 	}
 }

@@ -1,0 +1,15 @@
+
+.workspace {
+	width: 100%;
+	height: auto;
+ 	/* min-height: 95%; */
+}
+
+
+.footer {
+ 	/* position: absolute; */
+	bottom: 0;
+	width: 97%;
+	justify-content: center;
+	padding: 5px;
+}

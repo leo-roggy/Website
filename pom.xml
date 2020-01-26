@@ -123,6 +123,15 @@
             <artifactId>jetty-maven-plugin</artifactId>
             <version>9.4.0.M0</version>
         </dependency>
+        
+        <dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.10</version>
+		    <scope>provided</scope>
+		</dependency>
+		
+        
 		
     </dependencies>
 
